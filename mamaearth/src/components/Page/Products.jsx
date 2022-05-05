@@ -8,11 +8,16 @@ import { useEffect, useState } from "react";
 export const Products = (props) => {
   const [show, setShow] = useState(true);
   const [baby, setBaby] = useState([]);
+  let CartArr = JSON.parse(localStorage.getItem("cartArr"))||[]
   useEffect(() => {
-    axios
+    
+      axios
       .get(props.url)
       .then((res) => setBaby(res.data));
-  },[props.url]);
+ 
+  },[])
+
+
   const handleSort=(value)=>{
     if(value==='high'){
       setBaby([...baby].sort((a,b)=>{
@@ -23,6 +28,11 @@ export const Products = (props) => {
         return a.price > b.price ? 1 : a.price < b.price ? -1 : 0
        }))
     }
+  }
+  const addToCart = (data) =>{
+    console.log('data:', data)
+    CartArr.push(data);
+    localStorage.setItem("cartArr" , JSON.stringify(CartArr))
   }
   return (
     <>
@@ -64,7 +74,8 @@ export const Products = (props) => {
               desc={e.desc}
               price={e.price}
               image={e.img}
-              category={e.category}
+              data={e}
+              cart={addToCart}
             ></Card>
           );
         })}

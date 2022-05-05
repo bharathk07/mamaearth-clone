@@ -1,9 +1,9 @@
 import "./App.css";
-import { BabyPage } from './components/BabyPage/BabyPage'
+import { AllRoutes } from './Routes/Routes'
 
 function App() {
   return <div className="App">
-    <BabyPage></BabyPage>
+    <AllRoutes/>
   </div>;
 }
 
