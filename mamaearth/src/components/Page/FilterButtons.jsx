@@ -1,4 +1,4 @@
-import './filter_buttons.css'
+import './FilterButtons.css'
 
 export const FilterButtons = () =>{
     return(

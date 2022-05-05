@@ -1,4 +1,4 @@
-import "./card.css";
+import "./Card.css";
 
 export const Card = (props) => {
   let rating = (Math.random() * (4 - 4 + 1) + 4).toFixed(1)

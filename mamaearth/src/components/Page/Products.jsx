@@ -1,18 +1,18 @@
-import { Card } from "./card";
-import "./baby_products.css";
+import { Card } from "./Card";
+import "./Products.css";
 // import { Link } from 'react-router-dom'
-import { FilterButtons } from "./filter_buttons";
+import { FilterButtons } from "./FilterButtons";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-export const BabyProducts = () => {
+export const Products = (props) => {
   const [show, setShow] = useState(true);
   const [baby, setBaby] = useState([]);
   useEffect(() => {
     axios
-      .get("https://mama-earth.herokuapp.com/baby_page")
+      .get(props.url)
       .then((res) => setBaby(res.data));
-  }, []);
+  },[props.url]);
   const handleSort=(value)=>{
     if(value==='high'){
       setBaby([...baby].sort((a,b)=>{
@@ -27,7 +27,7 @@ export const BabyProducts = () => {
   return (
     <>
       <img
-        src="https://images.ctfassets.net/66mrrren2unf/1LH7b5JOWtuTiarFdJ2QNA/07434c4bf1d6e104ada7e8c7f13f57d3/desktop-bathing-.jpg?q=40"
+        src={props.poster}
         alt=""
         width="1349px"
         height="400px"
