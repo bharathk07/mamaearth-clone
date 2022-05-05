@@ -1,19 +1,10 @@
-
-import { Card } from './components/BabyPage/card';
-
-import './App.css';
-
+import "./App.css";
+import { BabyProducts } from './components/BabyPage/baby_products'
 
 function App() {
-  return (
-    <div className="App">
-
-      <Card/>
-
-    
-    </div>
-  );
+  return <div className="App">
+    <BabyProducts></BabyProducts>
+  </div>;
 }
-
 
 export default App;

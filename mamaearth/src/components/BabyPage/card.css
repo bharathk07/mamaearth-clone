@@ -50,3 +50,7 @@ button{
     width: 270px;
     height: 300px;
 }
+button:hover{
+  background-color: rgb(0, 175, 239);
+  color: white;
+}
