@@ -18,7 +18,7 @@ export const Card = (props) => {
          <span className="review"> <img src="https://mamaearth.in/static/mamaearth/verified.svg" alt=""  /> <p>{`${reviews} Reviews`}</p> </span>
         </div>
         <div className="price">{props.price}</div>
-        <button>ADD TO CART</button>
+        <button className="cart_btn">ADD TO CART</button>
       </div>
     </>
   );
