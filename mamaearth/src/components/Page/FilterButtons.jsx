@@ -1,14 +1,15 @@
 import './FilterButtons.css'
 
-export const FilterButtons = () =>{
+export const FilterButtons = ({filter }) =>{
     return(
         <div className='buttons'>
-            <button>ALL</button>
-            <button>SHAMPOO</button>
-            <button>MASK</button>
-            <button>FACE WASH</button>
-            <button>OIL</button>
-            <button>LOTION</button>
+            <button onClick={()=>filter("")}>ALL</button>
+            <button onClick={()=>filter("shampoo")}>SHAMPOO</button>
+            <button onClick={()=>filter("_mask")}>MASK</button>
+            <button onClick={()=>filter("_wash")}>FACE WASH</button>
+            <button onClick={()=>filter("_oil")}>OIL</button>
+            <button onClick={()=>filter("lotion")}>LOTION</button>
+            <button onClick={()=>filter("diaper")}>DIAPER</button>
         </div>
     )
 }

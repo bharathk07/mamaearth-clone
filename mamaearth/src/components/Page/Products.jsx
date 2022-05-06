@@ -8,40 +8,44 @@ import { useEffect, useState } from "react";
 export const Products = (props) => {
   const [show, setShow] = useState(true);
   const [baby, setBaby] = useState([]);
-  let CartArr = JSON.parse(localStorage.getItem("cartArr"))||[]
+  const [filter,setFilter] = useState("");
+  console.log('baby:', baby)
+  let CartArr = JSON.parse(localStorage.getItem("cartArr")) || [];
   useEffect(() => {
-    
-      axios
-      .get(props.url)
-      .then((res) => setBaby(res.data));
- 
-  },[])
+    getData();
+  }, []);
 
+  const filterData = (str) => {
+    setFilter(str)
+  };
 
-  const handleSort=(value)=>{
-    if(value==='high'){
-      setBaby([...baby].sort((a,b)=>{
-        return a.price > b.price ? -1 : a.price < b.price ? 1 : 0
-       }))
-    }else{
-      setBaby([...baby].sort((a,b)=>{
-        return a.price > b.price ? 1 : a.price < b.price ? -1 : 0
-       }))
+  const getData = () => {
+    axios.get(props.url).then((res) => setBaby(res.data));
+  };
+
+  const handleSort = (value) => {
+    if (value === "high") {
+      setBaby(
+        [...baby].sort((a, b) => {
+          return a.price > b.price ? -1 : a.price < b.price ? 1 : 0;
+        })
+      );
+    } else {
+      setBaby(
+        [...baby].sort((a, b) => {
+          return a.price > b.price ? 1 : a.price < b.price ? -1 : 0;
+        })
+      );
     }
-  }
-  const addToCart = (data) =>{
-    console.log('data:', data)
+  };
+  const addToCart = (data) => {
+    console.log("data:", data);
     CartArr.push(data);
-    localStorage.setItem("cartArr" , JSON.stringify(CartArr))
-  }
+    localStorage.setItem("cartArr", JSON.stringify(CartArr));
+  };
   return (
     <>
-      <img
-        src={props.poster}
-        alt=""
-        width="1349px"
-        height="400px"
-      />
+      <img src={props.poster} alt="" width="1349px" height="400px" />
       <div className="title-sort">
         <div className="title">Our Products</div>
         {show ? (
@@ -59,15 +63,21 @@ export const Products = (props) => {
             ></img>
           </div>
         ) : (
-          <select onChange={(e)=>handleSort(e.target.value)}>
+          <select onChange={(e) => handleSort(e.target.value)}>
             <option value="high">High-Low</option>
             <option value="low">Low-High</option>
           </select>
         )}
       </div>
-      <FilterButtons/>
+      <FilterButtons filter={filterData} />
       <div className="container">
-        {baby.map((e) => {
+        {baby.filter((data)=>{
+          if(data.category===undefined){
+            return null;
+          }else{
+            return data.category.includes(filter)
+          }
+        }).map((e) => {
           return (
             <Card
               key={e.id}

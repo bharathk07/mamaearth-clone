@@ -1,6 +1,6 @@
 import "./Card.css";
 
-export const Card = ({image , desc, price , cart, data}) => {
+export const Card = ({image , desc, price , cart, data }) => {
   let rating = (Math.random() * (4 - 4 + 1) + 4).toFixed(1)
   let reviews = Math.floor((Math.random() * (300 - 100 + 1) + 100));
   return (

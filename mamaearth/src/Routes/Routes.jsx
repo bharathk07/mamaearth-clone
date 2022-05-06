@@ -9,6 +9,7 @@ export const AllRoutes = () =>{
         <Routes>
             <Route path="/baby" element={<BabyPage/>}/>
             <Route path="/face" element={<FacePage/>}/>
+            {/* <Route path="/face/:id" element={<ProductDetail/>}/> */}
         </Routes>
     )
 }
