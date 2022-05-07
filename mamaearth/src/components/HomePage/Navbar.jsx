@@ -52,14 +52,14 @@ export const Navbar = () => {
             />{" "}
             <div className="cart"><b>{cartArr.length}</b></div>{" "}
           </Link>
-          <p>Cart</p>
+          <p className="p">Cart</p>
           <Link to="/login">
             <FontAwesomeIcon
               icon={faUser}
               style={{ fontSize: "20px", color: "dodgerblue" }}
             />
           </Link>
-          <p>Login</p>
+          <p className="p">Login</p>
         </div>
       </div>
 

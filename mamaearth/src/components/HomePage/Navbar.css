@@ -74,7 +74,11 @@ a{
     color: rgb(49, 47, 47);
     font-family: sans-serif;
 }
-
+.p{
+  color: black;
+  margin: 0 20px;
+  font-size: 15px;
+}
 /* ------------------ */
 .stick{
     position: fixed;
@@ -167,3 +171,6 @@ a{
     margin: 0;
     color: #208ce4;
   }
+.carousel{
+  margin-top: 140px;
+}
