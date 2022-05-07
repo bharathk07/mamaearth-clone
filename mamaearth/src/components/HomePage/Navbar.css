@@ -1,0 +1,169 @@
+.strip{
+    background-color:rgb(204, 54, 54);
+    display: flex;
+    justify-content: space-between;
+    height: 25px;
+}
+
+.strip p{
+    font-size: 12px;
+    margin: 0;
+    color: white;
+    padding: 5px 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.search-bar{
+    display: flex;
+    justify-content: space-around;
+    flex: 33.33%;
+}
+.search{
+    margin: 15px 0 0 30px;
+}
+.example{
+    width: 500px;
+    display: flex;
+    height: 30px;
+}
+
+.example input{
+    padding: 4px;
+    font-size: 17px;
+    border: 1px solid rgba(0, 0, 0, 0.075);
+    float: left;
+    width: 80%;
+    background: #ffffff;
+    border-radius: 5px 0 0 5px;
+}
+.example button{
+    width: 20%;
+    padding: 4px;
+    background: #2196f3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid #208ce4;
+    border-left: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+.cart{
+    width: 12px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid #208ce4;
+    position: absolute;
+    right: 202px;
+    top: 34px;
+    color: black;
+    text-align: center;
+    font-size: 10px;
+     
+}
+.cart-login{
+    margin-top: 20px;
+    display: flex;
+}
+.cart-login p{
+    margin: 0;
+    padding: 0 12px;
+}
+a{
+    text-decoration: none;
+    color: rgb(49, 47, 47);
+    font-family: sans-serif;
+}
+
+/* ------------------ */
+.stick{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: auto;
+    background-color: white;
+}
+.navbar {
+    overflow: hidden;
+    background-color: white;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.13);
+    font-weight: 600;
+    font-family:  sans-serif;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.747);
+    text-align: center;
+    padding: 12px 15px;
+    text-decoration: none;
+    border-top: 1px;
+  }
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 13px;
+    border: none;
+    outline: none;
+    color: rgba(0, 0, 0, 0.747);
+    padding: 12px 15px;
+    background-color: inherit;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  .row {
+    display: flex;
+    margin-left: 0mm;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 10px 20px;
+  }
+
+  .navbar a:hover,
+  .dropdown:hover .dropbtn {
+    background-color: white;
+    color: rgba(40, 180, 245, 0.918);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    margin-top: 40px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    font-size: 13px;
+    float: none;
+    color: rgba(0, 0, 0, 0.568);
+    padding: 4px 1px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    color: black;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .column p {
+    margin: 0;
+    color: #208ce4;
+  }

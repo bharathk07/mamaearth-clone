@@ -45,7 +45,7 @@ export const Products = (props) => {
   };
   return (
     <>
-      <img src={props.poster} alt="" width="1349px" height="400px" />
+      <img src={props.poster} alt="" style={{marginTop:"130px"}} width="1349px" height="400px" />
       <div className="title-sort">
         <div className="title">Our Products</div>
         {show ? (
