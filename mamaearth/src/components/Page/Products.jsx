@@ -1,6 +1,6 @@
 import { Card } from "./Card";
 import "./Products.css";
-// import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 import { FilterButtons } from "./FilterButtons";
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -8,15 +8,15 @@ import { useEffect, useState } from "react";
 export const Products = (props) => {
   const [show, setShow] = useState(true);
   const [baby, setBaby] = useState([]);
-  const [filter,setFilter] = useState("");
-  console.log('baby:', baby)
+  const [filter, setFilter] = useState("");
+  console.log("baby:", baby);
   let CartArr = JSON.parse(localStorage.getItem("cartArr")) || [];
   useEffect(() => {
     getData();
   }, []);
 
   const filterData = (str) => {
-    setFilter(str)
+    setFilter(str);
   };
 
   const getData = () => {
@@ -45,7 +45,13 @@ export const Products = (props) => {
   };
   return (
     <>
-      <img src={props.poster} alt="" style={{marginTop:"130px"}} width="1349px" height="400px" />
+      <img
+        src={props.poster}
+        alt=""
+        // style={{ marginTop: "130px" }}
+        width="1349px"
+        height="400px"
+      />
       <div className="title-sort">
         <div className="title">Our Products</div>
         {show ? (
@@ -71,24 +77,28 @@ export const Products = (props) => {
       </div>
       <FilterButtons filter={filterData} />
       <div className="container">
-        {baby.filter((data)=>{
-          if(data.category===undefined){
-            return null;
-          }else{
-            return data.category.includes(filter)
-          }
-        }).map((e) => {
-          return (
-            <Card
-              key={e.id}
-              desc={e.desc}
-              price={e.price}
-              image={e.img}
-              data={e}
-              cart={addToCart}
-            ></Card>
-          );
-        })}
+        {baby
+          .filter((data) => {
+            if (data.category === undefined) {
+              return null;
+            } else {
+              return data.category.includes(filter);
+            }
+          })
+          .map((e) => {
+            return (
+              <Link to={`/face/${e.id}`}>
+                <Card
+                  key={e.id}
+                  desc={e.desc}
+                  price={e.price}
+                  image={e.img}
+                  data={e}
+                  cart={addToCart}
+                ></Card>
+              </Link>
+            );
+          })}
       </div>
     </>
   );
