@@ -1,7 +1,6 @@
 .main {
     height: 894.8px;
     width: 1273.45px;
-    /* border: 2px solid rgb(0, 255, 34); */
     margin: auto;
     display: flex;
     line-height: 22.68px;
@@ -13,13 +12,9 @@
   .left {
     height: 886.725px;
     width: 736.35px;
-    /* border: 1px solid red; */
+
   }
   
-  /* .left-1 { */
-  /* border: 1px solid red; */
-  
-  /* } */
   
   .left-2 input {
     width: 48%;
@@ -34,7 +29,7 @@
   }
   
   .left-2 {
-    /* border: 1px solid red; */
+  
     display: flex;
   }
   
@@ -47,12 +42,12 @@
   }
   
   .left-3 {
-    /* border: 1px solid red; */
+
     display: flex;
   }
   
   .left-4 {
-    /* border: 1px solid red; */
+  
     display: flex;
   }
   
@@ -65,7 +60,7 @@
   }
   
   .left-5 {
-    /* border: 1px solid red; */
+   
     display: flex;
     font-size: 20px;
   }
@@ -79,7 +74,7 @@
   }
   
   .left-6 {
-    /* border: 2px solid rgb(149, 35, 54); */
+   
     margin-top: 4%;
   }
   
@@ -103,11 +98,11 @@
   
   .left-7 {
     display: flex;
-    /* border: 1px solid rgb(188, 21, 21); */
+  
   }
   
   .left-71 {
-    /* border: 2px solid rgb(85, 185, 90); */
+   
     border: 1px solid rgb(169, 167, 167);
     border-radius: 5px;
     width: 28%;
@@ -179,7 +174,7 @@
     margin-top: 20px;
   }
   
-  /* .left-723 input */
+  
   .left-723 img {
     width: 50px;
     height: 40px;
@@ -196,7 +191,7 @@
     width: 22px;
     height: 22px;
     margin-top: 15px;
-    /* margin: auto; */
+  
   }
   
   .left-73 p {
@@ -230,7 +225,7 @@
     margin-right: 15px;
   }
   
-  /* ?????????????????????????????????/ */
+ 
   .right {
     height: 810px;
     padding: 2px;
@@ -261,7 +256,6 @@
   .right-2 {
     display: flex;
     margin-top: 10px ;
-    /* border: 1px solid rgb(128, 0, 11); */
   }
   .right-21 {
     border: 1px solid grey;
@@ -270,7 +264,6 @@
     height: 90px;
   }
   .right-22 {
-    /* border: 1px solid rgb(2, 0, 128); */
     margin-left: 13px;
     margin-right: 11px;
   }
@@ -297,7 +290,6 @@
     width: 96%;
     margin: auto;
     display: flex;
-    /* align-items: center; */
     margin-top: 10px;
     text-align: center;
     border-radius: 4px;
@@ -314,7 +306,6 @@
     color: green;
     margin-left: 10px;
     padding-top: 6px;
-    /* margin-bottom: ; */
   }
   .right-6 h3 {
     margin-left: 10px;

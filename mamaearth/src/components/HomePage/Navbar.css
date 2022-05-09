@@ -79,15 +79,7 @@ a{
   margin: 5px 20px 0 20px;
   font-size: 14px;
 }
-/* ------------------ */
-/* .stick{
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    height: auto;
-    background-color: white;
-} */
+
 .navbar {
     overflow: hidden;
     background-color: white;
@@ -171,6 +163,3 @@ a{
     margin: 0;
     color: #208ce4;
   }
-/* .carousel{
-  margin-top: 140px;
-} */

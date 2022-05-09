@@ -50,7 +50,7 @@ export const Products = (props) => {
       <img
         src={props.poster}
         alt=""
-        // style={{ marginTop: "130px" }}
+        /* style={{ marginTop: "130px" }} */
         width="1349px"
         height="400px"
       />

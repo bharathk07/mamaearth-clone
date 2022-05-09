@@ -39,16 +39,16 @@ export const SignUp = () => {
   const [isSubmit, setIsSubmit] = useState(false);
 
   const handleChange = (e) => {
-    // console.log(e.target)
+    
     const { name, value } = e.target;
-    // console.log(name,value)
+   
     setForm({
       ...form,
       [name]: value,
     });
   };
 
-  // async function handleSubmit (e){
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -126,21 +126,20 @@ export const SignUp = () => {
                 component="form"
                 noValidate
                 onSubmit={handleSubmit}
-                // onClick ={Sign_up}
+               
                 sx={{ mt: 3 }}
               >
                 <Grid container spacing={2}>
                   <Grid item xs={12}>
                     <TextField
                       onChange={handleChange}
-                      //   autoComplete="given-name"
+                     
                       name="first_name"
-                      //   required
+                 
                       fullWidth
                       id="first_name"
                       label="First Name"
-                      //   autoFocus
-                      //   value={form.first_name}
+                   
                     />
                   </Grid>
                   <p style={{ color: "red",fontSize:"10px", marginLeft: "25px" }}>
@@ -149,13 +148,12 @@ export const SignUp = () => {
                   <Grid item xs={12}>
                     <TextField
                       onChange={handleChange}
-                      //   required
+                     
                       fullWidth
                       id="last_name"
                       label="Last Name"
                       name="last_name"
-                      //   autoComplete="family-name"
-                      //   value={form.last_name}
+                      
                     />
                   </Grid>
                   <p style={{ color: "red", fontSize:"10px", marginLeft: "25px" }}>
@@ -165,13 +163,12 @@ export const SignUp = () => {
                   <Grid item xs={12}>
                     <TextField
                       onChange={handleChange}
-                      //   required
+                    
                       fullWidth
                       id="email"
                       label="Email Address"
                       name="email"
-                      //   autoComplete="email"
-                      //  value={form.Email}
+                     
                     />
                   </Grid>
                   <p style={{ color: "red",fontSize:"10px", marginLeft: "25px" }}>
@@ -181,14 +178,13 @@ export const SignUp = () => {
                   <Grid item xs={12}>
                     <TextField
                       onChange={handleChange}
-                      //   required
+                  
                       fullWidth
                       name="password"
                       label="Password"
                       type="password"
                       id="password"
-                      //   autoComplete="new-password"
-                      //   value={form.password}
+                    
                     />
                   </Grid>
 
@@ -206,7 +202,7 @@ export const SignUp = () => {
                   </Grid>
                 </Grid>
                 <Button
-                  // onClick={Sign_up}
+                 
                   type="submit"
                   fullWidth
                   variant="contained"
@@ -217,7 +213,7 @@ export const SignUp = () => {
                 <div>
                 
                   <Button
-                    //   style={{ color: "red" }}
+               
                     fullWidth
                     variant="contained"
                     onClick={() =>
