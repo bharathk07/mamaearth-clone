@@ -7,13 +7,15 @@ export const Checkout = () => {
     const navigate = useNavigate()
 
     const sendOtp = () =>{
+        alert("OTP Send !")
         let otp = Math.floor(1000+Math.random()*9000)
         localStorage.setItem("otp",otp)
-        axios.post("",{
+        axios.post("https://mama-earth.herokuapp.com/otp",{
             otp
         }).then((res)=>res.json());
         navigate('/otp')
     }
+
   return (
     <div className="main">
       <div className="left">

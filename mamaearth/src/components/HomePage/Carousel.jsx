@@ -19,21 +19,21 @@ export const Slider = () => {
          </div>
          <div>
             <img
-               src="https://images.ctfassets.net/66mrrren2unf/1LH7b5JOWtuTiarFdJ2QNA/07434c4bf1d6e104ada7e8c7f13f57d3/desktop-bathing-.jpg?q=40"
+               src="https://images.ctfassets.net/66mrrren2unf/4usS7VI6DjrDrBwNpl5ngu/580d570b03cf60849ec9682467b3fce4/Desktop.jpg?q=40"
                alt=""
                
             />
          </div>
          <div>
             <img
-               src="https://images.ctfassets.net/66mrrren2unf/jvnVpA7ItjHuqkoeGFOi9/dadcba07e6722d1a73b72d3068644e25/Desktop.jpg?q=40"
+               src="https://images.ctfassets.net/66mrrren2unf/2nFAFSa68RorsrU94U5pO9/90708e3f5bd6f312d9911b63e4977a3e/desktop-body-wash.jpg?q=40"
                alt=""
                
             />
          </div>
          <div>
             <img
-               src="https://images.ctfassets.net/66mrrren2unf/OoKYuxKNlL96p4n6uytiG/02aecfff5b2170bf9fab1c1be850e17c/Desktop_Without_CTA.jpg?q=40"
+               src="https://images.ctfassets.net/66mrrren2unf/5dElTf4nIm0q7zDEmWgU4j/bcd1ab0f30ea5fef52e00b2436658dcb/Desktop_Henna-Paste-with-CTA.jpg?q=40"
                alt=""
                
             />

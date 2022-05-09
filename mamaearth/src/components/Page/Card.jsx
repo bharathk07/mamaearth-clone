@@ -1,4 +1,5 @@
 import "./Card.css";
+import { Link } from "react-router-dom";
 
 export const Card = ({image , desc, price , cart, data }) => {
   let rating = (Math.random() * (4 - 4 + 1) + 4).toFixed(1)
@@ -10,9 +11,11 @@ export const Card = ({image , desc, price , cart, data }) => {
           src={image}
           alt=""
         />
+        <Link to={`/face/${data.id}`}>
         <div className="desc">
           {desc}
         </div>
+        </Link>
         <div className="rate-review">
          <span className="rating"> <img src="https://mamaearth.in/static/mamaearth/star.svg" alt="star" height="18px" /> <p>{rating}</p> </span>
          <span className="review"> <img src="https://mamaearth.in/static/mamaearth/verified.svg" alt=""  /> <p>{`${reviews} Reviews`}</p> </span>

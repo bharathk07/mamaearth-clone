@@ -259,7 +259,7 @@ export const ProductDetail = () => {
           >
             <div className="cMqoec">
               <div className="eQqUUy">
-                <h2>What to Expect From Mamaearth Gentle Cleansing Shampoo</h2>
+                <h2>What to Expect From Mamaearth </h2>
                 <div className="html">
                   <ul className="result-list">
                     <li>

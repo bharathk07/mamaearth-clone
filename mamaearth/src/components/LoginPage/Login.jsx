@@ -53,6 +53,7 @@ export const SignUp = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError(validate(form));
+    localStorage.setItem("isAuth",JSON.stringify(form))
     setIsSubmit(true);
 
     await fetch(`https://mama-earth.herokuapp.com/register`, {
@@ -65,6 +66,7 @@ export const SignUp = () => {
     }).then((res) => {
       res.json();
     });
+    window.location.href='/'
   };
 
   useEffect(() => {
@@ -79,22 +81,22 @@ export const SignUp = () => {
     const errors = {};
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
     if (!values.first_name) {
-      errors.first_name = "first_name is required";
+      errors.first_name = "First Name is required";
     }
     if (!values.last_name) {
-      errors.last_name = "last_name is required";
+      errors.last_name = "Last Name is required";
     }
     if (!values.email) {
-      errors.email = "email is required";
+      errors.email = "Email is required";
     } else if (!regex.test(values.email)) {
       errors.email = "This is not a valid email format!";
     }
     if (!values.password) {
-      errors.password = "password is required";
+      errors.password = "Password is required";
     } else if (values.password < 4) {
-      errors.password = "password must be at least 4 characters";
+      errors.password = "Password must be at least 4 characters";
     } else if (values.password > 10) {
-      errors.password = "password cannot exceed more than 10 characters";
+      errors.password = "Password cannot exceed more than 10 characters";
     }
     return errors;
   };
@@ -102,7 +104,7 @@ export const SignUp = () => {
   return (
     <div >
       {Object.keys(error).length === 0 && isSubmit ? (
-        <div>Signed in successfully</div>
+        alert("Loggin Successful !")
       ) : (
         <ThemeProvider theme={theme}>
           <Container component="main" maxWidth="xs">
@@ -142,7 +144,7 @@ export const SignUp = () => {
                       //   value={form.first_name}
                     />
                   </Grid>
-                  <p style={{ color: "red", marginLeft: "25px" }}>
+                  <p style={{ color: "red",fontSize:"10px", marginLeft: "25px" }}>
                     {error.first_name}
                   </p>
                   <Grid item xs={12}>
@@ -157,7 +159,7 @@ export const SignUp = () => {
                       //   value={form.last_name}
                     />
                   </Grid>
-                  <p style={{ color: "red", marginLeft: "25px" }}>
+                  <p style={{ color: "red", fontSize:"10px", marginLeft: "25px" }}>
                     {error.last_name}
                   </p>
 
@@ -173,7 +175,7 @@ export const SignUp = () => {
                       //  value={form.Email}
                     />
                   </Grid>
-                  <p style={{ color: "red", marginLeft: "25px" }}>
+                  <p style={{ color: "red",fontSize:"10px", marginLeft: "25px" }}>
                     {error.email}
                   </p>
 
@@ -191,7 +193,7 @@ export const SignUp = () => {
                     />
                   </Grid>
 
-                  <p style={{ color: "red", marginLeft: "25px" }}>
+                  <p style={{ color: "red",fontSize:"10px", marginLeft: "25px" }}>
                     {error.password}
                   </p>
 

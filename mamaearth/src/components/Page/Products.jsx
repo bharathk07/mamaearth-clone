@@ -1,15 +1,17 @@
 import { Card } from "./Card";
 import "./Products.css";
-import { Link } from "react-router-dom";
 import { FilterButtons } from "./FilterButtons";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { cart } from '../Redux/action'
+import { useDispatch } from 'react-redux'
+
 
 export const Products = (props) => {
   const [show, setShow] = useState(true);
   const [baby, setBaby] = useState([]);
   const [filter, setFilter] = useState("");
-  console.log("baby:", baby);
+  const dispatch = useDispatch()
   let CartArr = JSON.parse(localStorage.getItem("cartArr")) || [];
   useEffect(() => {
     getData();
@@ -39,7 +41,7 @@ export const Products = (props) => {
     }
   };
   const addToCart = (data) => {
-    console.log("data:", data);
+    dispatch(cart(1))
     CartArr.push(data);
     localStorage.setItem("cartArr", JSON.stringify(CartArr));
   };
@@ -87,7 +89,6 @@ export const Products = (props) => {
           })
           .map((e) => {
             return (
-              <Link to={`/face/${e.id}`}>
                 <Card
                   key={e.id}
                   desc={e.desc}
@@ -96,7 +97,6 @@ export const Products = (props) => {
                   data={e}
                   cart={addToCart}
                 ></Card>
-              </Link>
             );
           })}
       </div>

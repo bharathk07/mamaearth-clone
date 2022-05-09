@@ -7,6 +7,7 @@ import { HomePage } from "../components/HomePage/Home";
 import { ProductDetail } from "../components/ProductDetailPage/ProductDetail";
 import { SignUp } from "../components/LoginPage/Login";
 import { Checkout } from '../components/CheckOutPage/Checkout'
+import { Otp } from '../components/OTP/Otp'
 
 
 export const AllRoutes = () =>{
@@ -19,6 +20,7 @@ export const AllRoutes = () =>{
             <Route path="/" element={<HomePage/>}/>
             <Route path="/face/:id" element={<ProductDetail/>}/>
             <Route path="/checkout" element={<Checkout/>}/>
+            <Route path="/otp" element={<Otp/>}/>
         </Routes>
     )
 }

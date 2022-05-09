@@ -6,9 +6,12 @@ import {
   faShoppingCart,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import { useSelector } from 'react-redux'
 
 export const Navbar = () => {
-    let cartArr = JSON.parse(localStorage.getItem("cartArr"));
+    let user = JSON.parse(localStorage.getItem("isAuth")) || {};
+    const cart = useSelector((state)=>state.count)
+
   return (
     <>
     <div className="stick">
@@ -50,7 +53,7 @@ export const Navbar = () => {
               icon={faShoppingCart}
               style={{ fontSize: "20px", color: "dodgerblue" }}
             />{" "}
-            <div className="cart"><b>{cartArr.length}</b></div>{" "}
+            <div className="cart"><b>{cart}</b></div>{" "}
           </Link>
           <p className="p">Cart</p>
           <Link to="/login">
@@ -59,7 +62,7 @@ export const Navbar = () => {
               style={{ fontSize: "20px", color: "dodgerblue" }}
             />
           </Link>
-          <p className="p">Login</p>
+          <p className="p">{user.first_name === undefined ? "Signin" : user.first_name}</p>
         </div>
       </div>
 

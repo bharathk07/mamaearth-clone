@@ -54,7 +54,7 @@
     border-radius: 50%;
     border: 1px solid #208ce4;
     position: absolute;
-    right: 202px;
+    right: 212px;
     top: 34px;
     color: black;
     text-align: center;
@@ -66,8 +66,8 @@
     display: flex;
 }
 .cart-login p{
-    margin: 0;
-    padding: 0 12px;
+    margin: 5px 0;
+    padding: 0 14px;
 }
 a{
     text-decoration: none;
@@ -76,8 +76,8 @@ a{
 }
 .p{
   color: black;
-  margin: 0 20px;
-  font-size: 15px;
+  margin: 5px 20px 0 20px;
+  font-size: 14px;
 }
 /* ------------------ */
 /* .stick{
