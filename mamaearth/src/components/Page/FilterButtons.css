@@ -1,0 +1,17 @@
+.buttons{
+    display: flex;
+    width: 1130px;
+    margin: 20px auto;
+    gap: 10px;
+}
+.buttons button{
+    border: 1px solid lightgray;
+    font-size: 0.8rem;
+    margin: 3px 6px;
+    padding: 6px 12px;
+    border-radius: 10rem;
+}
+.buttons button:hover{
+    border: 1px solid dodgerblue;
+    color: dodgerblue;
+}

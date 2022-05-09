@@ -1,0 +1,27 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px 0;
+    width: 1150px;
+    margin: auto;
+}
+.title-sort{
+    display: flex;
+    width: 1130px;
+    margin: 30px auto ;
+    justify-content: space-between;
+}
+.title{
+    font-size: 20px;
+    font-weight: 600;
+}
+.sort{
+ font-size: 18px;
+ font-weight: bold;
+ color: rgb(0, 175, 239);
+}
+select{
+    color: black;
+    border: 1px solid rgb(0, 175, 239);
+    border-radius: 10px;
+}
