@@ -9,7 +9,7 @@ import { store } from "./components/Redux/store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  // <React.StrictMode>
+  /* <React.StrictMode> */
     <BrowserRouter>
     <ReduxProvider store={store}>
       <App />
@@ -18,7 +18,7 @@ root.render(
   /* </React.StrictMode> */
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+/* If you want to start measuring performance in your app, pass a function
+ to log results (for example: reportWebVitals(console.log))
+ or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals */
 reportWebVitals();

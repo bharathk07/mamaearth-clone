@@ -2,7 +2,8 @@ import "./Checkout.css";
 import { useNavigate } from 'react-router-dom'
 import axios  from 'axios'
 export const Checkout = () => {
-    let cartArr = JSON.parse(localStorage.getItem("cartArr"))
+   let name = JSON.parse(localStorage.getItem('isAuth')) || ""
+    let cartArr = JSON.parse(localStorage.getItem("cartArr")) || []
     const total = cartArr.reduce((pre,cur)=>pre + Number(cur.price[3]+cur.price[4]+cur.price[5]),0)
     const navigate = useNavigate()
 
@@ -20,7 +21,7 @@ export const Checkout = () => {
     <div className="main">
       <div className="left">
         <div className="left-1">
-          <p>Hi Ritu, Welcome to Mamaearth</p>
+          <p>{`Hi ${name.first_name}, Welcome to Mamaearth`}</p>
           <h3>New Delivery Address</h3>
         </div>
         <div className="left-2">
