@@ -66,7 +66,6 @@ export const SignUp = () => {
     }).then((res) => {
       res.json();
     });
-    window.location.href='/'
   };
 
   useEffect(() => {
@@ -104,7 +103,7 @@ export const SignUp = () => {
   return (
     <div >
       {Object.keys(error).length === 0 && isSubmit ? (
-        alert("Loggin Successful !")
+        window.location.href='/'
       ) : (
         <ThemeProvider theme={theme}>
           <Container component="main" maxWidth="xs">
