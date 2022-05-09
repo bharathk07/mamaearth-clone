@@ -1,0 +1,74 @@
+.main{
+height: 894.8px;
+width: 1273.45px;
+border: 1px solid red;
+margin: auto;
+display: flex;
+line-height: 22.68px;
+background-color: #FFFFFF;
+position: relative;
+display: block;
+transform: all 0s ease 0s;
+text-decoration: none solid rgb(119, 119, 119);
+
+}
+
+.left{
+    height: 886.725px;
+    width: 736.35px;
+    border: 1px solid red;
+}
+.right{
+    height: 604.025px;
+    width: 519.888px;
+    border: 1px soid red;
+}
+.details{
+    height: 422px;
+    width: 730px;
+    border: 1px solid red;
+    /* display: flex; */
+
+}
+.paydetails{
+    height:380px;
+    width: 730px;
+    margin: 15px 0 0 0;
+    border: 1px solid red;
+    /* display: flex; */
+}
+.productAdd{
+    border: 2px solid red;
+    height: 85px;
+    width: 502px;
+
+}
+/* .offCoupon{
+    width: 502px;
+    height: 80px;
+    border: 2px solid red;
+} */
+/* .totalPay{
+    height: 275px;
+    width: 502px;
+    border: 2px solid red;
+} */
+
+/* .addTag{
+    font-weight: 600;
+    font-size: 16.72px;
+    height: 27px;
+    width: 730px;
+} */
+/* .inp1{
+    height: 41px;
+    width: 362px;
+    padding: 10px 10px 10px 10px;
+    border: 2px solid #E6E8E7;
+    display: inline-block;
+    cursor: text;
+    outline: rgb(255, 0, 0) dashed 1px;
+   border-top-right-radius: 4px;
+   border-top-left-radius: 4px;
+
+} */

@@ -1,0 +1,12 @@
+nav{
+  border: 2px solid red;
+  width: 100%;
+  height: 123px;
+}
+
+footer{
+  width: 960.862px;
+  height: 1336.8px;
+  border: 2px solid black;
+  margin: auto;
+}
