@@ -123,7 +123,7 @@ padding-top: 5%;
 
 .testingEarth {
 margin: 5%;
-} */
+} 
 
 #CONTAINER{
 display: grid;
@@ -136,9 +136,9 @@ width: 60%;
 height: 300px;
 width:100px
 }
-/* nav bars */
+
 .maindiv{
-/* margin: 20px; */
+
 width: 100%;
 }
 
@@ -149,8 +149,7 @@ width: 100%;
 padding-right: 10px;
 padding-left: 20px;
 
-/* font-size:20px ; */
-/* padding-bottom: 50px; */
+
 
 }
 #firstlink{
@@ -167,7 +166,7 @@ padding-left: 20px;
 }
 .middle{
 padding-left: 20px;
-/* font-size:20px ; */
+
 
 }
 .nav1{
@@ -187,20 +186,20 @@ justify-content: space-between;
 display: flex;
 color: black;
 height: 50px;
-/* padding-left: 10px; */
+
 margin-top: 30px;  
 
 }
 #length{
 width: 500px;
 font-size: 20px;
-/* padding-right: 10px; */
+
 }
 .search1{
 background-color: #0aa7e3 ;
 color: white;
 font-size: 20px;
-/* width: 100px; */
+
 }
 .img1{
 width: 100px;
@@ -208,9 +207,7 @@ width: 100px;
 }
 .image{
 margin-top: 30px;
-/* width:auto; */
-/* text-align: center; */
-/* width: 100%; */
+
 
 }
 .image1{
@@ -223,7 +220,7 @@ display: grid;
 }
 
 
-/* youtube video styles */
+
 
 #contentBoxes{
     height: 700px;
