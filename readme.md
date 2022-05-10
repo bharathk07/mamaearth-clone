@@ -1,5 +1,5 @@
 
-# Clone of Mamaearth.in  &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp; &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp; &nbsp;   &nbsp;   &nbsp;     &nbsp;   &nbsp;    &nbsp;   &nbsp;   &nbsp;   &nbsp;    <img src="https://mamaearthp.imgix.net/wysiwyg/mamaearth-logo.png?auto=format&fit=scale" height="40"/> 
+# Clone of Mamaearth.in  &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp; &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp; &nbsp;   &nbsp;   &nbsp;     &nbsp;   &nbsp;     <img src="https://mamaearthp.imgix.net/wysiwyg/mamaearth-logo.png?auto=format&fit=scale" height="40"/> 
 
 In this project we have tried to make a clone of <a href="https://mamaearth.in/" target="_blank">MamaEarth website</a>. With our efforts and the technology stack,we were able to clone the front end, integrated it with backend and added similar looks and features.The Mamaearth company is an Indian brand and is based out of Gurugram, Haryana. It was founded by Varun and Ghazal Alagh in 2016 to provide toxin-free, natural baby care, skincare, haircare products, and more for babies and everyone else. This Project is done by 
 Our team created clone of Mamaearth within a week.Our group consists of five members: Mitul Asodariya,Shaik Gafoor,Hashmat Noorani,Chanchal Verma and Bharath K
@@ -28,7 +28,7 @@ Install npm packages
 npm install
 ```
 
-Run the surver
+Run the server
 
 ```
 npm start
@@ -94,7 +94,27 @@ All the data got stored in and called from <b>Mongo Atlas cloud database</b>.
 
 <h1>Home Page</h1>
 <br>
-<img src=""/>
+<img src="https://raw.githubusercontent.com/bharathk07/mamaearth-clone/bharathk07/mamaearth/src/Static/Home.png"/>
+<br>
+
+<h1>Login / Signup Page</h1>
+<br>
+<img src="https://raw.githubusercontent.com/bharathk07/mamaearth-clone/bharathk07/mamaearth/src/Static/Login.png"/>
+<br>
+
+<h1>Product Page</h1>
+<br>
+<img src="https://raw.githubusercontent.com/bharathk07/mamaearth-clone/bharathk07/mamaearth/src/Static/Product.png"/>
+<br>
+
+<h1>Product Detail Page</h1>
+<br>
+<img src="https://raw.githubusercontent.com/bharathk07/mamaearth-clone/bharathk07/mamaearth/src/Static/Product%20Detail.png"/>
+<br>
+
+<h1>Cart & Checkout Page</h1>
+<br>
+<img src="https://raw.githubusercontent.com/bharathk07/mamaearth-clone/bharathk07/mamaearth/src/Static/cart%20and%20checkout.png"/>
 <br>
 
 
