@@ -47,7 +47,7 @@ go to http://localhost:3000
 ### Team Members
 
 - **[Mitul Asodariya](https://github.com/Mitul-778)**
-- **[Bharat K](https://github.com/bharathk07)**
+- **[Bharath K](https://github.com/bharathk07)**
 - **[Shaik Gafoor](https://github.com/gafoor8374)**
 - **[Chanchal Verma](https://github.com/ChanchalS7)**
 - **[Hashmat Noorani](https://github.com/Hashmat-Noorani)**
